@@ -64,8 +64,8 @@ class Login extends React.Component {
               <Row className="justify-content-center">
                 <Col lg="5">
                   <Card className="bg-secondary shadow border-0">
-                    <CardHeader className="bg-white pb-5">
-                      <div className="text-muted text-center mb-3">
+                    <CardHeader className="bg-white pb-0">
+                      <div className="text-muted text-center mb-0">
                         <small>Sign in with</small>
                       </div>
                       <div className="btn-wrapper text-center">
@@ -144,7 +144,7 @@ class Login extends React.Component {
                             className="custom-control-label"
                             htmlFor=" customCheckLogin"
                           >
-                            <span>Remember me</span>
+                            <span>로그인 상태 유지</span>
                           </label>
                         </div>
                         <div className="text-center">
@@ -153,7 +153,7 @@ class Login extends React.Component {
                             color="primary"
                             type="button"
                           >
-                            Sign in
+                            Login
                           </Button>
                         </div>
                       </Form>
@@ -184,6 +184,7 @@ class Login extends React.Component {
             </Container>
           </section>
         </main>
+        {/* <SimpleFooter /> */}
       </>
     );
   }

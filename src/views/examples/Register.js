@@ -64,8 +64,8 @@ class Register extends React.Component {
               <Row className="justify-content-center">
                 <Col lg="5">
                   <Card className="bg-secondary shadow border-0">
-                    <CardHeader className="bg-white pb-5">
-                      <div className="text-muted text-center mb-3">
+                    <CardHeader className="bg-white pb-0">
+                      <div className="text-muted text-center mb-0">
                         <small>Sign up with</small>
                       </div>
                       <div className="text-center">
@@ -111,7 +111,7 @@ class Register extends React.Component {
                       </div>
                       <Form role="form">
                         <FormGroup>
-                          <InputGroup className="input-group-alternative mb-3">
+                          <InputGroup className="input-group-alternative mb-03">
                             <InputGroupAddon addonType="prepend">
                               <InputGroupText>
                                 <i className="ni ni-hat-3" />
@@ -183,7 +183,7 @@ class Register extends React.Component {
                             color="primary"
                             type="button"
                           >
-                            Create account
+                            계정 생성하기
                           </Button>
                         </div>
                       </Form>
@@ -194,7 +194,7 @@ class Register extends React.Component {
             </Container>
           </section>
         </main>
-        <SimpleFooter />
+        {/* <SimpleFooter /> */}
       </>
     );
   }

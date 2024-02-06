@@ -90,10 +90,15 @@ class DemoNavbar extends React.Component {
                   <Row>
                     <Col className="collapse-brand" xs="6">
                       <Link to="/">
-                        <img
+                        {/* <img
                           alt="..."
                           src={require("assets/img/brand/argon-react.png")}
-                        />
+                        /> */}
+                        <img
+                          alt="..."
+                          src={require("assets/img/brand/bssm.png")}
+                        />{" "}
+                        부산소망교회
                       </Link>
                     </Col>
                     <Col className="collapse-close" xs="6">
@@ -107,8 +112,34 @@ class DemoNavbar extends React.Component {
                 <Nav className="navbar-nav-hover align-items-lg-center" navbar>
                   <UncontrolledDropdown nav>
                     <DropdownToggle nav>
-                      <i className="ni ni-ui-04 d-lg-none mr-1" />
-                      <span className="nav-link-inner--text">Components</span>
+                      <i className="material-icons dp48">perm_identity</i>
+                      <span className="nav-link-inner--text ml-1">
+                        교인 관리
+                      </span>
+                    </DropdownToggle>
+                    <DropdownMenu>
+                      {/* <DropdownItem to="/landing-page" tag={Link}>
+                        Landing
+                      </DropdownItem>
+                      <DropdownItem to="/profile-page" tag={Link}>
+                        앱정보
+                      </DropdownItem> */}
+                      <DropdownItem to="/login-page" tag={Link}>
+                        교인 조회
+                      </DropdownItem>
+                      <DropdownItem to="/register-page" tag={Link}>
+                        교인 등록
+                      </DropdownItem>
+                    </DropdownMenu>
+                  </UncontrolledDropdown>
+                  <UncontrolledDropdown nav>
+                    <DropdownToggle nav>
+                      <i className="material-icons dp48">directions_bus</i>
+                      <span className="nav-link-inner--text ml-1">
+                        차량 예약 관리
+                      </span>
+                      {/* https://materializecss.com/icons.html */}
+                      {/*<i className="ni ni-ui-04 d-lg-none mr-1" />*/}
                     </DropdownToggle>
                     <DropdownMenu className="dropdown-menu-xl">
                       <div className="dropdown-menu-inner">
@@ -169,26 +200,6 @@ class DemoNavbar extends React.Component {
                       </div>
                     </DropdownMenu>
                   </UncontrolledDropdown>
-                  <UncontrolledDropdown nav>
-                    <DropdownToggle nav>
-                      <i className="ni ni-collection d-lg-none mr-1" />
-                      <span className="nav-link-inner--text">Examples</span>
-                    </DropdownToggle>
-                    <DropdownMenu>
-                      <DropdownItem to="/landing-page" tag={Link}>
-                        Landing
-                      </DropdownItem>
-                      <DropdownItem to="/profile-page" tag={Link}>
-                        Profile
-                      </DropdownItem>
-                      <DropdownItem to="/login-page" tag={Link}>
-                        Login
-                      </DropdownItem>
-                      <DropdownItem to="/register-page" tag={Link}>
-                        Register
-                      </DropdownItem>
-                    </DropdownMenu>
-                  </UncontrolledDropdown>
                 </Nav>
                 <Nav className="align-items-lg-center ml-lg-auto" navbar>
                   <NavItem>
@@ -198,16 +209,16 @@ class DemoNavbar extends React.Component {
                       id="tooltip333589074"
                       target="_blank"
                     >
-                      <i className="fa fa-facebook-square" />
-                      <span className="nav-link-inner--text d-lg-none ml-2">
-                        Facebook
+                      <span className="material-icons">logout</span>
+                      <span className="nav-link-inner--text ml-1">
+                        로그아웃
                       </span>
                     </NavLink>
                     <UncontrolledTooltip delay={0} target="tooltip333589074">
-                      Like us on Facebook
+                      Logout
                     </UncontrolledTooltip>
                   </NavItem>
-                  <NavItem>
+                  {/* <NavItem>
                     <NavLink
                       className="nav-link-icon"
                       href="https://www.instagram.com/creativetimofficial"
@@ -269,7 +280,7 @@ class DemoNavbar extends React.Component {
                         Download
                       </span>
                     </Button>
-                  </NavItem>
+                    </NavItem> */}
                 </Nav>
               </UncontrolledCollapse>
             </Container>
