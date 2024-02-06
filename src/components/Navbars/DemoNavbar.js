@@ -210,6 +210,7 @@ class DemoNavbar extends React.Component {
                       target="_blank"
                     >
                       <span className="material-icons">logout</span>
+                      {/* https://fontawesomeicons.com/materialdesign/icons/logout */}
                       <span className="nav-link-inner--text ml-1">
                         로그아웃
                       </span>
