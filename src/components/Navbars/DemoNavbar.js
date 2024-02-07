@@ -138,10 +138,16 @@ class DemoNavbar extends React.Component {
                       <span className="nav-link-inner--text ml-1">
                         차량 예약 관리
                       </span>
-                      {/* https://materializecss.com/icons.html */}
-                      {/*<i className="ni ni-ui-04 d-lg-none mr-1" />*/}
                     </DropdownToggle>
-                    <DropdownMenu className="dropdown-menu-xl">
+                    <DropdownMenu>
+                      <DropdownItem to="/login-page" tag={Link}>
+                        차량 신청
+                      </DropdownItem>
+                      <DropdownItem to="/register-page" tag={Link}>
+                        차량 신청 결과 조회
+                      </DropdownItem>
+                    </DropdownMenu>
+                    {/* <DropdownMenu className="dropdown-menu-xl">
                       <div className="dropdown-menu-inner">
                         <Media
                           className="d-flex align-items-center"
@@ -198,7 +204,7 @@ class DemoNavbar extends React.Component {
                           </Media>
                         </Media>
                       </div>
-                    </DropdownMenu>
+                    </DropdownMenu> */}
                   </UncontrolledDropdown>
                 </Nav>
                 <Nav className="align-items-lg-center ml-lg-auto" navbar>

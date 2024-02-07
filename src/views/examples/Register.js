@@ -65,10 +65,10 @@ class Register extends React.Component {
                 <Col lg="5">
                   <Card className="bg-secondary shadow border-0">
                     <CardHeader className="bg-white pb-0">
-                      <div className="text-muted text-center mb-0">
-                        <small>Sign up with</small>
+                      <div className="text-center mb-0">
+                        <span className="text-black">계정 생성</span>
                       </div>
-                      <div className="text-center">
+                      {/* <div className="text-center">
                         <Button
                           className="btn-neutral btn-icon mr-4"
                           color="default"
@@ -85,7 +85,7 @@ class Register extends React.Component {
                             />
                           </span>
                           <span className="btn-inner--text">Github</span>
-                        </Button>
+                            </Button>
                         <Button
                           className="btn-neutral btn-icon ml-1"
                           color="default"
@@ -103,12 +103,12 @@ class Register extends React.Component {
                           </span>
                           <span className="btn-inner--text">Google</span>
                         </Button>
-                      </div>
+                      </div> */}
                     </CardHeader>
                     <CardBody className="px-lg-5 py-lg-5">
-                      <div className="text-center text-muted mb-4">
+                      {/* <div className="text-center text-muted mb-4">
                         <small>Or sign up with credentials</small>
-                      </div>
+                      </div> */}
                       <Form role="form">
                         <FormGroup>
                           <InputGroup className="input-group-alternative mb-03">
@@ -128,6 +128,19 @@ class Register extends React.Component {
                               </InputGroupText>
                             </InputGroupAddon>
                             <Input placeholder="Email" type="email" />
+                          </InputGroup>
+                        </FormGroup>
+                        <FormGroup>
+                          <InputGroup className="input-group-alternative mb-3">
+                            <InputGroupAddon addonType="prepend">
+                              <InputGroupText>
+                                <i className="ni ni-mobile-button"></i>
+                              </InputGroupText>
+                            </InputGroupAddon>
+                            <Input
+                              placeholder="Mobile('-'없이 숫자만)"
+                              type="number"
+                            />
                           </InputGroup>
                         </FormGroup>
                         <FormGroup>

@@ -69,7 +69,7 @@ class Login extends React.Component {
                         <small>Sign in with</small>
                       </div>
                       <div className="btn-wrapper text-center">
-                        <Button
+                        {/* <Button
                           className="btn-neutral btn-icon"
                           color="default"
                           href="#pablo"
@@ -85,7 +85,7 @@ class Login extends React.Component {
                             />
                           </span>
                           <span className="btn-inner--text">Github</span>
-                        </Button>
+                            </Button> */}
                         <Button
                           className="btn-neutral btn-icon ml-1"
                           color="default"
