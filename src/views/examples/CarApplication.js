@@ -23,11 +23,11 @@ import Datepicker from "../IndexSections/Datepicker.js";
 
 // reactstrap components
 import {
-  Badge,
+  // Badge,
   Button,
   Card,
   CardBody,
-  CardImg,
+  // CardImg,
   FormGroup,
   Input,
   InputGroupAddon,
@@ -40,10 +40,10 @@ import {
 
 // core components
 import DemoNavbar from "components/Navbars/DemoNavbar.js";
-import CardsFooter from "components/Footers/CardsFooter.js";
+// import CardsFooter from "components/Footers/CardsFooter.js";
 
 // index page sections
-import Download from "../IndexSections/Download.js";
+// import Download from "../IndexSections/Download.js";
 
 class CarRegist extends React.Component {
   state = {};
@@ -97,7 +97,6 @@ class CarRegist extends React.Component {
                 <Col lg="8">
                   <Card className="bg-gradient-secondary shadow">
                     <CardBody className="p-lg-5">
-                      <Datepicker />
                       <h4 className="mb-1">차량 예약 신청</h4>
                       <p className="mt-0">
                         사용하실 차량의 예약 정보를 입력하세요.
@@ -107,14 +106,15 @@ class CarRegist extends React.Component {
                           focused: this.state.dateFocused,
                         })}
                       >
-                        <InputGroup className="input-group-alternative">
+                        <Datepicker caption="신청일" />
+                        {/* <InputGroup className="input-group-alternative">
                           <InputGroupAddon addonType="prepend">
                             <InputGroupText>
-                              {/* <i className="ni ni-user-run" /> */}
+                              <i className="ni ni-user-run" />
                               <i className="ni ni-bold-right"></i>
                             </InputGroupText>
                           </InputGroupAddon>
-                        </InputGroup>
+                        </InputGroup> */}
                       </FormGroup>
                       <FormGroup
                         className={classnames("mt-3", {

@@ -87,16 +87,19 @@ class Datepicker extends React.Component {
   render() {
     return (
       <>
-        <h3 className="h4 text-success font-weight-bold mt-md mb-4">
+        {/* <h3 className="h4 text-success font-weight-bold mt-md mb-4">
           Datepicker
-        </h3>
+        </h3> */}
         <Row>
           <Col md="4">
-            <small className="d-block text-uppercase font-weight-bold mb-3">
+            {/*<small className="d-block text-uppercase font-weight-bold mb-3">
               Single date
-            </small>
+            </small>*/}
             <FormGroup>
               <InputGroup>
+                {/* <span className="d-block text-uppercase font-weight-bold mb-3">
+                  {this.props.caption}
+                </span> */}
                 <InputGroupAddon addonType="prepend">
                   <InputGroupText>
                     <i className="ni ni-calendar-grid-58" />
@@ -104,7 +107,7 @@ class Datepicker extends React.Component {
                 </InputGroupAddon>
                 <ReactDatetime
                   inputProps={{
-                    placeholder: "Date Picker Here",
+                    placeholder: this.props.caption,
                   }}
                   timeFormat={false}
                 />
