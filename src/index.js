@@ -25,6 +25,11 @@ import "assets/scss/argon-design-system-react.scss?v1.1.0";
 
 // import Index from "views/Index.js";
 import Landing from "views/examples/Landing.js";
+import CarApplication from "views/examples/CarApplication.js";
+import CarInquiry from "views/examples/CarInquiry.js";
+import CarRegist from "views/examples/CarRegist.js";
+import MemInquiry from "views/examples/MemInquiry.js";
+import MemRegist from "views/examples/MemRegist.js";
 import Login from "views/examples/Login.js";
 import Profile from "views/examples/Profile.js";
 import Register from "views/examples/Register.js";
@@ -35,6 +40,12 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" exact element={<Login />} />
+      <Route path="/car-application-page" exact element={<CarApplication />} />
+      <Route path="/car-inquiry-page" exact element={<CarInquiry />} />
+      <Route path="/car-regist-page" exact element={<CarRegist />} />
+      <Route path="/mem-inquiry-page" exact element={<MemInquiry />} />
+      <Route path="/mem-regist-page" exact element={<MemRegist />} />
+
       <Route path="/landing-page" exact element={<Landing />} />
       <Route path="/login-page" exact element={<Login />} />
       <Route path="/profile-page" exact element={<Profile />} />

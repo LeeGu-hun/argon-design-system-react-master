@@ -21,13 +21,13 @@ import { Link } from "react-router-dom";
 import Headroom from "headroom.js";
 // reactstrap components
 import {
-  Button,
+  //Button,
   UncontrolledCollapse,
   DropdownMenu,
   DropdownItem,
   DropdownToggle,
   UncontrolledDropdown,
-  Media,
+  //Media,
   NavbarBrand,
   Navbar,
   NavItem,
@@ -124,10 +124,10 @@ class DemoNavbar extends React.Component {
                       <DropdownItem to="/profile-page" tag={Link}>
                         앱정보
                       </DropdownItem> */}
-                      <DropdownItem to="/login-page" tag={Link}>
+                      <DropdownItem to="/mem-inquiry" tag={Link}>
                         교인 조회
                       </DropdownItem>
-                      <DropdownItem to="/register-page" tag={Link}>
+                      <DropdownItem to="/mem-regist" tag={Link}>
                         교인 등록
                       </DropdownItem>
                     </DropdownMenu>
@@ -140,11 +140,14 @@ class DemoNavbar extends React.Component {
                       </span>
                     </DropdownToggle>
                     <DropdownMenu>
-                      <DropdownItem to="/login-page" tag={Link}>
+                      <DropdownItem to="/car-application-page" tag={Link}>
                         차량 신청
                       </DropdownItem>
-                      <DropdownItem to="/register-page" tag={Link}>
+                      <DropdownItem to="/car-inquiry-page" tag={Link}>
                         차량 신청 결과 조회
+                      </DropdownItem>
+                      <DropdownItem to="/car-regist-page" tag={Link}>
+                        차량 등록
                       </DropdownItem>
                     </DropdownMenu>
                     {/* <DropdownMenu className="dropdown-menu-xl">
