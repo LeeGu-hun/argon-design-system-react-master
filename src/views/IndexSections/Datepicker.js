@@ -111,7 +111,7 @@ class Datepicker extends React.Component {
               </InputGroup>
             </FormGroup>
           </Col>
-          <Col className="mt-4 mt-md-0" md="8">
+          {/* <Col className="mt-4 mt-md-0" md="8">
             <small className="d-block text-uppercase font-weight-bold mb-3">
               Date range
             </small>
@@ -180,7 +180,7 @@ class Datepicker extends React.Component {
                 </FormGroup>
               </Col>
             </Row>
-          </Col>
+          </Col> */}
         </Row>
       </>
     );

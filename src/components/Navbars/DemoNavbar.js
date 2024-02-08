@@ -124,10 +124,10 @@ class DemoNavbar extends React.Component {
                       <DropdownItem to="/profile-page" tag={Link}>
                         앱정보
                       </DropdownItem> */}
-                      <DropdownItem to="/mem-inquiry" tag={Link}>
+                      <DropdownItem to="/mem-inquiry-page" tag={Link}>
                         교인 조회
                       </DropdownItem>
-                      <DropdownItem to="/mem-regist" tag={Link}>
+                      <DropdownItem to="/mem-regist-page" tag={Link}>
                         교인 등록
                       </DropdownItem>
                     </DropdownMenu>
