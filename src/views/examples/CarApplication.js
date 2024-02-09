@@ -107,14 +107,6 @@ class CarRegist extends React.Component {
                         })}
                       >
                         <Datepicker caption="신청일" />
-                        {/* <InputGroup className="input-group-alternative">
-                          <InputGroupAddon addonType="prepend">
-                            <InputGroupText>
-                              <i className="ni ni-user-run" />
-                              <i className="ni ni-bold-right"></i>
-                            </InputGroupText>
-                          </InputGroupAddon>
-                        </InputGroup> */}
                       </FormGroup>
                       <FormGroup
                         className={classnames("mt-3", {
