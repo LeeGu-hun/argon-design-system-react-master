@@ -7,6 +7,7 @@
 * Product Page: https://www.creative-tim.com/product/argon-design-system-react
 * Copyright 2023 Creative Tim (https://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/argon-design-system-react/blob/master/LICENSE.md)
+* Reference https://www.npmjs.com/package/react-datetime
 
 * Coded by Creative Tim
 
@@ -109,7 +110,12 @@ class Datepicker extends React.Component {
                   inputProps={{
                     placeholder: this.props.caption,
                   }}
+                  initialValue={new Date()}
+                  locale="kr"
+                  dateFormat={"yyyy/MM/DD"}
                   timeFormat={false}
+                  renderInput={this.renderDatetime}
+                  closeOnSelect={true}
                 />
               </InputGroup>
             </FormGroup>

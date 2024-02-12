@@ -20,6 +20,7 @@ import React from "react";
 import classnames from "classnames";
 
 import Datepicker from "../IndexSections/Datepicker.js";
+import Selects from "../IndexSections/Selects.js";
 
 // reactstrap components
 import {
@@ -99,7 +100,7 @@ class CarRegist extends React.Component {
                     <CardBody className="p-lg-5">
                       <h4 className="mb-1">차량 예약 신청</h4>
                       <p className="mt-0">
-                        사용하실 차량의 예약 정보를 입력하세요!
+                        사용하실 차량의 예약 정보를 입력하세요.
                       </p>
                       <FormGroup
                         className={classnames("mt-3", {
@@ -109,29 +110,33 @@ class CarRegist extends React.Component {
                         <Datepicker caption="신청일" />
                       </FormGroup>
                       <FormGroup
-                        className={classnames("mt-3", {
-                          focused: this.state.nameFocused,
+                        className={classnames({
+                          focused: this.state.carSelectFocused,
                         })}
                       >
-                        <InputGroup className="input-group-alternative">
-                          <InputGroupAddon addonType="prepend">
-                            <InputGroupText>
-                              {/* <i className="ni ni-user-run" /> */}
-                              <i className="ni ni-bold-right"></i>
-                            </InputGroupText>
-                          </InputGroupAddon>
-                          <Input
-                            placeholder="차량 번호(입력: 02가 1111)"
-                            type="text"
-                            onFocus={(e) =>
-                              this.setState({ nameFocused: true })
-                            }
-                            onBlur={(e) =>
-                              this.setState({ nameFocused: false })
-                            }
-                            name="carnum"
-                          />
-                        </InputGroup>
+                        <Selects
+                          icons={"ni ni-bus-front-12"}
+                          opts={[
+                            { value: "january", label: "January" },
+                            { value: "february", label: "February" },
+                            { value: "march", label: "March" },
+                            { value: "april", label: "April" },
+                            { value: "may", label: "May" },
+                            { value: "june", label: "June" },
+                            { value: "july", label: "July" },
+                            { value: "august", label: "August" },
+                            { value: "september", label: "September" },
+                            { value: "october", label: "October" },
+                            { value: "november", label: "November" },
+                            { value: "december", label: "December" },
+                          ]}
+                          onFocus={(e) =>
+                            this.setState({ carSelectFocused: true })
+                          }
+                          onBlur={(e) =>
+                            this.setState({ carSelectFocused: false })
+                          }
+                        />
                       </FormGroup>
                       <FormGroup
                         className={classnames({
