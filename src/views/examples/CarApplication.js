@@ -99,7 +99,7 @@ class CarRegist extends React.Component {
                     <CardBody className="p-lg-5">
                       <h4 className="mb-1">차량 예약 신청</h4>
                       <p className="mt-0">
-                        사용하실 차량의 예약 정보를 입력하세요.
+                        사용하실 차량의 예약 정보를 입력하세요!
                       </p>
                       <FormGroup
                         className={classnames("mt-3", {
