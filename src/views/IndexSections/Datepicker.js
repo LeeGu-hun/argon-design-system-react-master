@@ -111,7 +111,7 @@ class Datepicker extends React.Component {
                     placeholder: this.props.caption,
                   }}
                   initialValue={new Date()}
-                  locale="kr"
+                  locale="ko"
                   dateFormat={"yyyy/MM/DD"}
                   timeFormat={false}
                   renderInput={this.renderDatetime}
