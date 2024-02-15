@@ -186,7 +186,7 @@ class CarRegist extends React.Component {
                             </InputGroupText>
                           </InputGroupAddon>
                           <Input
-                            placeholder="차량 모델(입력: 현대 스타리아)"
+                            placeholder="사용목적"
                             type="text"
                             onFocus={(e) =>
                               this.setState({ emailFocused: true })
