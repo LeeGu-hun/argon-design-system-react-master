@@ -112,9 +112,11 @@ class CarRegist extends React.Component {
                       <FormGroup
                         className={classnames({
                           focused: this.state.carSelectFocused,
+                          width: 300,
                         })}
                       >
                         <Selects
+                          className="w-max"
                           icons={"ni ni-bus-front-12"}
                           opts={[
                             { value: "january", label: "January" },

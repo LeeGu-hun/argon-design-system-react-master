@@ -41,7 +41,7 @@ class Selects extends React.Component {
                   </InputGroupText>
                 </InputGroupAddon>
                 <div className="md-3">
-                  <select className="form-control-alternative">
+                  <select className="form-control-alternative m-1">
                     {carmodels.map((item, index) => (
                       <option
                         className="form-control-alternative"
