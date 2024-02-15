@@ -119,18 +119,9 @@ class CarRegist extends React.Component {
                           className="w-max"
                           icons={"ni ni-bus-front-12"}
                           opts={[
-                            { value: "january", label: "January" },
-                            { value: "february", label: "February" },
-                            { value: "march", label: "March" },
-                            { value: "april", label: "April" },
-                            { value: "may", label: "May" },
-                            { value: "june", label: "June" },
-                            { value: "july", label: "July" },
-                            { value: "august", label: "August" },
-                            { value: "september", label: "September" },
-                            { value: "october", label: "October" },
-                            { value: "november", label: "November" },
-                            { value: "december", label: "December" },
+                            { value: "스타렉스", label: "스타렉스" },
+                            { value: "스타리아", label: "스타리아" },
+                            { value: "카운티", label: "카운티" },
                           ]}
                           onFocus={(e) =>
                             this.setState({ carSelectFocused: true })
