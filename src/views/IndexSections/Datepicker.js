@@ -85,6 +85,12 @@ class Datepicker extends React.Component {
     }
     return "";
   };
+  styles = {
+    boxShadow: "0 1px 3px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.02)",
+    border: "0 solid white",
+    transition: "box-shadow 0.15s ease",
+    margin: "0",
+  };
   render() {
     return (
       <>
@@ -96,8 +102,8 @@ class Datepicker extends React.Component {
             {/*<small className="d-block text-uppercase font-weight-bold mb-3">
               Single date
             </small>*/}
-            <FormGroup>
-              <InputGroup>
+            <FormGroup style={this.styles}>
+              <InputGroup style={this.styles}>
                 {/* <span className="d-block text-uppercase font-weight-bold mb-3">
                   {this.props.caption}
                 </span> */}
@@ -107,6 +113,7 @@ class Datepicker extends React.Component {
                   </InputGroupText>
                 </InputGroupAddon>
                 <ReactDatetime
+                  style={this.styles}
                   inputProps={{
                     placeholder: this.props.caption,
                   }}
