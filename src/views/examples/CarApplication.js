@@ -116,7 +116,6 @@ class CarRegist extends React.Component {
                         })}
                       >
                         <Selects
-                          className="w-max"
                           icons={"ni ni-watch-time"}
                           opts={[
                             { value: "01", label: "01" },
@@ -158,7 +157,6 @@ class CarRegist extends React.Component {
                         })}
                       >
                         <Selects
-                          className="w-max"
                           icons={"ni ni-bus-front-12"}
                           opts={[
                             { value: "스타렉스", label: "스타렉스" },

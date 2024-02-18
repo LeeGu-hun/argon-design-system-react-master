@@ -18,11 +18,8 @@ class Selects extends React.Component {
   state = {};
   divstyle = {
     fontSize: "0.875rem",
-    transition: "all 0.15s ease",
     borderRight: "1px solid #cad1d7",
     paddingRight: "0.75rem",
-    display: "block",
-    width: "100%",
     height: "calc(1.5em + 1.25rem + 2px)",
     padding: "0.625rem 0.75rem",
     fontWeight: "400",
@@ -31,15 +28,18 @@ class Selects extends React.Component {
     backgroundColor: "#fff",
     backgroundClip: "padding-box",
     borderRadius: "0.25rem",
-    boxShadow: "none",
     transition: "all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55)",
     boxShadow: "0 1px 3px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.02)",
     border: "0",
-    transition: "box-shadow 0.15s ease",
+    position: "relative",
+    display: "flex",
+    flexWrap: "wrap",
+    alignItems: "stretch",
+    width: "100%",
   };
   selectstyle = {
     fontSize: "0.875rem",
-    transition: "all 0.15s ease",
+    lineHeight: "2rem",
     display: "inline-block",
     marginLeft: "3px",
     width: "95%",
