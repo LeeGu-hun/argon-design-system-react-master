@@ -20,6 +20,7 @@ import React from "react";
 import classnames from "classnames";
 
 import Datepicker from "../IndexSections/Datepicker.js";
+import Timepicker from "../IndexSections/Timepicker.js";
 import Selects from "../IndexSections/Selects.js";
 
 // reactstrap components
@@ -116,6 +117,28 @@ class CarRegist extends React.Component {
                         })}
                       >
                         <Selects
+                          icons={"ni ni-bus-front-12"}
+                          opts={[
+                            { value: "스타렉스", label: "스타렉스" },
+                            { value: "스타리아", label: "스타리아" },
+                            { value: "카운티", label: "카운티" },
+                          ]}
+                          onFocus={(e) =>
+                            this.setState({ carSelectFocused: true })
+                          }
+                          onBlur={(e) =>
+                            this.setState({ carSelectFocused: false })
+                          }
+                        />
+                      </FormGroup>
+                      <FormGroup
+                        className={classnames({
+                          focused: this.state.carSelectFocused,
+                          width: 300,
+                        })}
+                      >
+                        <Timepicker label="Basic time field" />
+                        <Selects
                           icons={"ni ni-watch-time"}
                           opts={[
                             { value: "01", label: "01" },
@@ -141,27 +164,6 @@ class CarRegist extends React.Component {
                             { value: "22", label: "22" },
                             { value: "23", label: "23" },
                             { value: "24", label: "24" },
-                          ]}
-                          onFocus={(e) =>
-                            this.setState({ carSelectFocused: true })
-                          }
-                          onBlur={(e) =>
-                            this.setState({ carSelectFocused: false })
-                          }
-                        />
-                      </FormGroup>
-                      <FormGroup
-                        className={classnames({
-                          focused: this.state.carSelectFocused,
-                          width: 300,
-                        })}
-                      >
-                        <Selects
-                          icons={"ni ni-bus-front-12"}
-                          opts={[
-                            { value: "스타렉스", label: "스타렉스" },
-                            { value: "스타리아", label: "스타리아" },
-                            { value: "카운티", label: "카운티" },
                           ]}
                           onFocus={(e) =>
                             this.setState({ carSelectFocused: true })

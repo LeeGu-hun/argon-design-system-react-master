@@ -98,7 +98,7 @@ class Datepicker extends React.Component {
           Datepicker
         </h3> */}
         <Row>
-          <Col md="4">
+          <Col>
             {/*<small className="d-block text-uppercase font-weight-bold mb-3">
               Single date
             </small>*/}

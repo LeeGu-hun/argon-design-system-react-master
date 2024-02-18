@@ -13,8 +13,10 @@ import React from "react";
 
 // reactstrap components
 import { Row, Col } from "reactstrap";
+import { useState } from "react";
+import TimePicker from "react-time-picker";
 
-class Selects extends React.Component {
+class Timepicker extends React.Component {
   state = {};
   divstyle = {
     fontSize: "0.875rem",
@@ -50,24 +52,14 @@ class Selects extends React.Component {
     // transition: "all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55)",
   };
   render() {
-    const carmodels = this.props.opts;
+    //const [value, onChange] = useState("10:00");
     return (
       <Row>
         <Col>
           <div style={this.divstyle}>
             <i className={this.props.icons}></i>
 
-            <select style={this.selectstyle}>
-              {carmodels.map((item, index) => (
-                <option
-                  className="form-control-alternative"
-                  key={index}
-                  value={item.value}
-                >
-                  {item.label}
-                </option>
-              ))}
-            </select>
+            <TimePicker value="10:00" />
           </div>
         </Col>
       </Row>
@@ -75,4 +67,4 @@ class Selects extends React.Component {
   }
 }
 
-export default Selects;
+export default Timepicker;
