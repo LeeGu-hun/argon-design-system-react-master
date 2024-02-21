@@ -141,7 +141,56 @@ class CarRegist extends React.Component {
                       </FormGroup>
                       <FormGroup
                         className={classnames({
-                          focused: this.state.emailFocused,
+                          focused: this.state.destiFocused,
+                        })}
+                      >
+                        <InputGroup className="input-group-alternative">
+                          <InputGroupAddon addonType="prepend">
+                            <InputGroupText>
+                              <i className="ni ni-bold-right"></i>
+                            </InputGroupText>
+                          </InputGroupAddon>
+                          <Input
+                            placeholder="목적지"
+                            type="text"
+                            onFocus={(e) =>
+                              this.setState({ destiFocused: true })
+                            }
+                            onBlur={(e) =>
+                              this.setState({ destiFocused: false })
+                            }
+                            name="destination"
+                          />
+                        </InputGroup>
+                      </FormGroup>
+                      <FormGroup
+                        className={classnames({
+                          focused: this.state.driverFocused,
+                        })}
+                      >
+                        <InputGroup className="input-group-alternative">
+                          <InputGroupAddon addonType="prepend">
+                            <InputGroupText>
+                              {/* <i className="ni ni-email-83" /> */}
+                              <i className="ni ni-bold-right"></i>
+                            </InputGroupText>
+                          </InputGroupAddon>
+                          <Input
+                            placeholder="운전자명"
+                            type="text"
+                            onFocus={(e) =>
+                              this.setState({ driverFocused: true })
+                            }
+                            onBlur={(e) =>
+                              this.setState({ driverFocused: false })
+                            }
+                            name="drivername"
+                          />
+                        </InputGroup>
+                      </FormGroup>
+                      <FormGroup
+                        className={classnames({
+                          focused: this.state.departmentFocused,
                         })}
                       >
                         <InputGroup className="input-group-alternative">
@@ -155,12 +204,12 @@ class CarRegist extends React.Component {
                             placeholder="기관명"
                             type="text"
                             onFocus={(e) =>
-                              this.setState({ emailFocused: true })
+                              this.setState({ departmentFocused: true })
                             }
                             onBlur={(e) =>
-                              this.setState({ emailFocused: false })
+                              this.setState({ departmentFocused: false })
                             }
-                            name="carmodel"
+                            name="departmentname"
                           />
                         </InputGroup>
                       </FormGroup>
@@ -182,7 +231,7 @@ class CarRegist extends React.Component {
                           size="lg"
                           type="button"
                         >
-                          등록하기
+                          신청하기
                         </Button>
                       </div>
                     </CardBody>

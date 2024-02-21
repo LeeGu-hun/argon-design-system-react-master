@@ -4,8 +4,12 @@
 * Timepicker
 =========================================================
 * Author: lifeisgoodnhappy@gmail.com
+* Reference: https://mui.com/x/react-date-pickers/date-picker/
 =========================================================
-
+  npm install @mui/x-date-pickers
+  npm install dayjs
+  npm install @mui/material @emotion/react @emotion/styled
+  npm install @mui/styled-engine-sc styled-components
 */
 
 import React from "react";
