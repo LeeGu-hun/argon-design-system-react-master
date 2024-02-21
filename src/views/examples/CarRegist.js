@@ -21,11 +21,11 @@ import classnames from "classnames";
 
 // reactstrap components
 import {
-  Badge,
+  // Badge,
   Button,
   Card,
   CardBody,
-  CardImg,
+  // CardImg,
   FormGroup,
   Input,
   InputGroupAddon,
@@ -38,17 +38,17 @@ import {
 
 // core components
 import DemoNavbar from "components/Navbars/DemoNavbar.js";
-import CardsFooter from "components/Footers/CardsFooter.js";
+// import CardsFooter from "components/Footers/CardsFooter.js";
 
 // index page sections
-import Download from "../IndexSections/Download.js";
+// import Download from "../IndexSections/Download.js";
 
 class CarRegist extends React.Component {
   state = {};
   componentDidMount() {
     document.documentElement.scrollTop = 0;
     document.scrollingElement.scrollTop = 0;
-    this.refs.main.scrollTop = 0;
+    // this.refs.main.scrollTop = 0;
   }
   render() {
     return (

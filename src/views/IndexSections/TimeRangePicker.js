@@ -13,13 +13,14 @@ import React from "react";
 // reactstrap components
 import { Row, Col } from "reactstrap";
 
-// TimePicker
+// TimeRangePicker
 import { DemoContainer } from "@mui/x-date-pickers/internals/demo";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { TimePicker } from "@mui/x-date-pickers/TimePicker";
+import * as dayjs from "dayjs";
 
-class Timepicker extends React.Component {
+class TimeRangePicker extends React.Component {
   state = {};
 
   divstyle = {
@@ -55,15 +56,28 @@ class Timepicker extends React.Component {
     border: "0 solid #fff",
     // transition: "all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55)",
   };
+  bgstyle = {
+    backgroundColor: "#fff",
+  };
   render() {
     return (
       <Row>
         <Col>
-          <div style={this.divstyle}>
-            <i className={this.props.icons}></i>
+          <div>
             <LocalizationProvider dateAdapter={AdapterDayjs}>
               <DemoContainer components={["TimePicker"]}>
-                <TimePicker label="시작 시간" />
+                <TimePicker
+                  label="사용 시작 시간"
+                  defaultValue={dayjs(new Date())}
+                />
+                {/* <span style={this.fontstyle}>~</span> */}
+                <TimePicker
+                  style={this.bgstyle}
+                  label="사용 종료 시간"
+                  defaultValue={dayjs(
+                    new Date(Date.parse(new Date()) + 5000 * 60 * 60)
+                  )}
+                />
               </DemoContainer>
             </LocalizationProvider>
           </div>
@@ -73,4 +87,4 @@ class Timepicker extends React.Component {
   }
 }
 
-export default Timepicker;
+export default TimeRangePicker;
