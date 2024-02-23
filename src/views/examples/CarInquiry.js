@@ -20,16 +20,11 @@ import React from "react";
 import classnames from "classnames";
 
 import Datepicker from "../IndexSections/Datepicker.js";
-import TimeRangePicker from "../IndexSections/TimeRangePicker.js";
-import Selects from "../IndexSections/Selects.js";
 
 // reactstrap components
 import {
-  // Badge,
-  Button,
   Card,
   CardBody,
-  // CardImg,
   FormGroup,
   Input,
   InputGroupAddon,
@@ -99,9 +94,9 @@ class CarRegist extends React.Component {
                 <Col lg="8">
                   <Card className="bg-gradient-secondary shadow">
                     <CardBody className="p-lg-5">
-                      <h4 className="mb-1">차량 예약 신청</h4>
+                      <h4 className="mb-1">차량 예약 조회</h4>
                       <p className="mt-0">
-                        사용하실 차량의 예약 정보를 입력하세요.
+                        일자별 사용하실 차량의 예약을 확인하세요.
                       </p>
                       <FormGroup
                         className={classnames("mt-3", {
@@ -110,81 +105,16 @@ class CarRegist extends React.Component {
                       >
                         <Datepicker caption="신청일" />
                       </FormGroup>
-                      <FormGroup
-                        className={classnames({
-                          focused: this.state.carSelectFocused,
-                          width: 300,
-                        })}
-                      >
-                        <Selects
-                          icons={"ni ni-bus-front-12"}
-                          opts={[
-                            { value: "스타렉스", label: "스타렉스" },
-                            { value: "스타리아", label: "스타리아" },
-                            { value: "카운티", label: "카운티" },
-                          ]}
-                          onFocus={(e) =>
-                            this.setState({ carSelectFocused: true })
-                          }
-                          onBlur={(e) =>
-                            this.setState({ carSelectFocused: false })
-                          }
-                        />
-                      </FormGroup>
-                      <FormGroup
-                        className={classnames({
-                          focused: this.state.carSelectFocused,
-                          width: 50,
-                        })}
-                      >
-                        <TimeRangePicker icons="far fa-clock" />
-                      </FormGroup>
-                      <FormGroup
-                        className={classnames({
-                          focused: this.state.emailFocused,
-                        })}
-                      >
-                        <InputGroup className="input-group-alternative">
-                          <InputGroupAddon addonType="prepend">
-                            <InputGroupText>
-                              {/* <i className="ni ni-email-83" /> */}
-                              <i className="ni ni-bold-right"></i>
-                            </InputGroupText>
-                          </InputGroupAddon>
-                          <Input
-                            placeholder="기관명"
-                            type="text"
-                            onFocus={(e) =>
-                              this.setState({ emailFocused: true })
-                            }
-                            onBlur={(e) =>
-                              this.setState({ emailFocused: false })
-                            }
-                            name="carmodel"
-                          />
-                        </InputGroup>
-                      </FormGroup>
                       <FormGroup className="mb-4">
                         <Input
                           className="form-control-alternative"
                           cols="80"
                           name="name"
-                          placeholder="▶ 사용 목적"
-                          rows="4"
+                          placeholder="▶ 비고"
+                          rows="10"
                           type="textarea"
                         />
                       </FormGroup>
-                      <div>
-                        <Button
-                          block
-                          className="btn-round"
-                          color="default"
-                          size="lg"
-                          type="button"
-                        >
-                          등록하기
-                        </Button>
-                      </div>
                     </CardBody>
                   </Card>
                 </Col>
